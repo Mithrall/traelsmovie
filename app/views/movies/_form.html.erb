@@ -1,0 +1,21 @@
+<%= form_with model: movie do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :year %><br>
+    <%= form.text_field :year %>
+  </div>
+
+  <div>
+    <%= form.label :plot %><br>
+    <%= form.text_area :plot %><br>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
+
